@@ -2,6 +2,7 @@
   "name": "latex-for-humans",
   "displayName": "LaTeX for Humans",
   "description": "Make LaTeX editing as easy as Word — with toolbar buttons for common actions.",
+  "icon": "icons/icon.png",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.105.0"
