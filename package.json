@@ -1,0 +1,179 @@
+{
+  "name": "latex-for-humans",
+  "displayName": "latex-for-humans",
+  "description": "Make LaTeX editing as easy as Word — with toolbar buttons for common actions.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.105.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "latexForHumans.bold",
+        "title": "LaTeX: Bold",
+        "category": "LaTeX",
+        "icon": {
+          "light": "images/bold-light.svg",
+          "dark": "images/bold-dark.svg"
+        }
+      },
+      {
+        "command": "latexForHumans.italic",
+        "title": "LaTeX: Italic",
+        "category": "LaTeX",
+        "icon": {
+          "light": "images/italic-light.svg",
+          "dark": "images/italic-dark.svg"
+        }
+      },
+      {
+        "command": "latexForHumans.color",
+        "title": "LaTeX: Color",
+        "category": "LaTeX",
+        "icon": {
+          "light": "images/color-light.svg",
+          "dark": "images/color-dark.svg"
+        }
+      },
+      {
+        "command": "latexForHumans.insertNumberedList",
+        "title": "LaTeX: Insert Numbered List",
+        "category": "LaTeX",
+        "icon": {
+          "light": "images/numbered-light.svg",
+          "dark": "images/numbered-dark.svg"
+        }
+      },
+      {
+        "command": "latexForHumans.insertBulletList",
+        "title": "LaTeX: Insert Bullet List",
+        "category": "LaTeX",
+        "icon": {
+          "light": "images/bullet-light.svg",
+          "dark": "images/bullet-dark.svg"
+        }
+      },
+      {
+        "command": "latexForHumans.insertFigure",
+        "title": "LaTeX: Insert Figure",
+        "category": "LaTeX",
+        "icon": {
+          "light": "images/image-light.svg",
+          "dark": "images/image-dark.svg"
+        }
+      },
+      {
+        "command": "latexForHumans.insertLink",
+        "title": "LaTeX: Insert Link",
+        "category": "LaTeX",
+        "icon": {
+          "light": "images/link-light.svg",
+          "dark": "images/link-dark.svg"
+        }
+      },
+      {
+        "command": "latexForHumans.section",
+        "title": "LaTeX: Section",
+        "category": "LaTeX"
+      },
+      {
+        "command": "latexForHumans.subSection",
+        "title": "LaTeX: Subsection",
+        "category": "LaTeX"
+      },
+      {
+        "command": "latexForHumans.subSubSection",
+        "title": "LaTeX: Subsubsection",
+        "category": "LaTeX"
+      },
+      {
+        "command": "latexForHumans.paragraph",
+        "title": "LaTeX: Paragraph",
+        "category": "LaTeX"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "latexForHumans.bold",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.italic",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.color",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.section",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.subSection",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.subSubSection",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.paragraph",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.insertLink",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.insertFigure",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.insertNumberedList",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.insertBulletList",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
