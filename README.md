@@ -1,7 +1,7 @@
 # 🧠 LaTeX for Humans
 
 **LaTeX for Humans** makes writing LaTeX documents as easy and intuitive as using a word processor.  
-Designed for non-experts, it adds simple buttons and shortcuts for common formatting actions like **bold**, *italic*, underline, itemized lists, figures, and more — directly inside Visual Studio Code.
+Designed for non-experts, it adds simple buttons and shortcuts for common formatting actions like **bold**, *italic*, underline, itemized lists, tables, and more — directly inside Visual Studio Code.
 
 ---
 
@@ -21,7 +21,7 @@ Designed for non-experts, it adds simple buttons and shortcuts for common format
 ✅ **Insert Common Structures**
 
 - Create lists (`itemize`, `enumerate`) with one click  
-- Insert sections or figures easily  
+- Insert tables, sections, or figures easily  
 
 ✅ **Custom Command Buttons**
 
@@ -45,3 +45,5 @@ LaTeX is powerful — but also intimidating for beginners.
 This extension helps bridge the gap between **ease of use** and **LaTeX precision**, bringing a touch of “Word-like” usability into VS Code.
 
 ---
+
+![Image showing buttons](./assets/image.png)

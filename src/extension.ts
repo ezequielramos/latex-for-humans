@@ -16,6 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
 		{ id: 'latexForHumans.insertFigure', insert: `\\begin{figure}[H]\n\t\\centering\n\t\\includegraphics[width=1\\textwidth]{path/to/file.png}\n\t\\caption{Enter Caption}\n\\end{figure}` },
 		{ id: 'latexForHumans.insertNumberedList', insert: `\\begin{itemize}\\setlength\\itemsep{0pt}\n\t\\item\n\\end{itemize}` },
 		{ id: 'latexForHumans.insertBulletList', insert: `\\begin{enumerate}\\setlength\\itemsep{0pt}\n\t\\item\n\\end{enumerate}` },
+		{ id: 'latexForHumans.insertTable', insert: `\\begin{table}[H]\n\t\\centering\n\t\\begin{tabular}{|l|p{3cm}|}\n\t\t\\hline\n\t\tLine 1 Column 1 & Line 1 Column 2 \\\\\n\t\t\\hline\n\t\tLine 2 Column 1 & Line 2 Column 2 \\\\\n\t\t\\hline\n\t\\end{tabular}\n\t\\caption{Table Example}\n\\end{table}` },
 	];
 
 	for (const cmd of replaceTextCommands) {

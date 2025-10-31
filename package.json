@@ -1,8 +1,8 @@
 {
   "name": "latex-for-humans",
-  "displayName": "latex-for-humans",
+  "displayName": "LaTeX for Humans",
   "description": "Make LaTeX editing as easy as Word — with toolbar buttons for common actions.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.105.0"
   },
@@ -70,6 +70,15 @@
         "icon": {
           "light": "images/image-light.svg",
           "dark": "images/image-dark.svg"
+        }
+      },
+      {
+        "command": "latexForHumans.insertTable",
+        "title": "LaTeX: Insert Table",
+        "category": "LaTeX",
+        "icon": {
+          "light": "images/table-light.svg",
+          "dark": "images/table-dark.svg"
         }
       },
       {
@@ -146,6 +155,11 @@
         },
         {
           "command": "latexForHumans.insertFigure",
+          "when": "editorLangId == latex",
+          "group": "navigation"
+        },
+        {
+          "command": "latexForHumans.insertTable",
           "when": "editorLangId == latex",
           "group": "navigation"
         },
